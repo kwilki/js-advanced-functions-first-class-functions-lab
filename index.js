@@ -1,11 +1,9 @@
-const drivers = ['Sally', 'Bob', 'Freddy', 'Claudia'];
-
-const returnFirstTwoDrivers = function(){
+const returnFirstTwoDrivers = function(drivers){
     const newArray = [drivers[0], drivers[1]];
     return newArray;
 }
 
-const returnLastTwoDrivers = function(){
+const returnLastTwoDrivers = function(drivers){
     const newArray = [drivers[2], drivers[3]];
     return newArray;
 }
@@ -23,5 +21,5 @@ const fareDoubler = createFareMultiplier(2)
 const fareTripler = createFareMultiplier(3)
 
 const selectDifferentDrivers = function(drivers, returnFirstTwoDrivers){
-
+    return returnFirstTwoDrivers(drivers)
 }
